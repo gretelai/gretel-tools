@@ -18,7 +18,7 @@ logger = logging.getLogger(__name__)
 logger.setLevel(logging.INFO)
 
 
-MODEL_REMOTE_PATH = "s3://gretel-tools/FT_headers.bin.gz"
+MODEL_REMOTE_PATH = "https://gretel-tools.s3-us-west-2.amazonaws.com/FT_headers.bin.gz"
 
 
 def _default_model_path() -> Path:
