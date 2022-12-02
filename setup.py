@@ -22,9 +22,9 @@ setup(
     entry_points={},
     package_dir={"": "src"},
     packages=find_packages("src"),
+    python_requires=">=3.7",
     install_requires=[
-        'dataclasses;python_version<"3.7"',
-        "smart_open==2.0.0",
+        "smart_open[s3,http]==5.2.1 ",
         "gensim==3.8.3",
         "numpy",
         "pandas",
